@@ -1,0 +1,226 @@
+/* outfit */
+/* font-family: "Outfit", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* grand hotel */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Play:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.blog-container{
+    background-color: #f2f4f4;
+}
+
+.blog-item-container{
+    background-color: #f2f4f4;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.blog-header h2{
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    font-size: 7vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.blog-header span{
+    font-family: "Grand Hotel", cursive;
+    color: #f94a13;
+}
+
+.blog-content{
+    padding-left: 1.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-content-container{
+    margin-top: 3vh;
+    /* box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    min-height: 100vh;
+    margin: 3vw auto;
+    width: 80vw;
+}
+
+.blog-content-header{
+    width: 60vw;
+    margin: 2vw auto;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.first-p{
+    position: relative;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+    text-align: justify;
+    width: 60vw;
+    margin-left: 13%;
+    top: 2.5vh;
+}
+
+.first-p span{
+    color: #f94a13;
+    font-weight: 500;
+}
+
+.blog-content-container img{
+    border-radius: 10px;
+    width: 30vw;
+    height: 40vh;
+    margin-top: 5vh;
+    margin-left: 30%;
+}
+
+.blog-content-container img:hover{
+    cursor: pointer;
+}
+
+.second-p-que{
+    margin-top: 5vh;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.blog-line1{
+    box-sizing: border-box;
+    margin-top: 12vh;
+    border-bottom: 1px solid #424949;
+    width: 50%;
+    margin-left: 20vw;
+    align-items: center;
+}
+
+.sec-2-heading{
+    margin-top: 5vh;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.web-elements{
+    display: flex;
+    flex-direction: column;
+}
+
+.web-elements h2{
+    margin-top: 4vh;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-left: 13%;
+}
+
+.web-elements span{
+    margin-top: 1vh;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+    text-align: justify;
+    width: 60vw;
+    margin-left: 13%;
+}
+
+.blog-line2{
+    box-sizing: border-box;
+    margin-top: 12vh;
+    border-bottom: 1px solid #424949;
+    width: 50%;
+    margin-left: 20vw;
+    align-items: center;
+}
+
+.sec3-heading{
+    margin-top: 5vh;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.trend-class{
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-class h2{
+    margin-top: 4vh;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-left: 13%;
+}
+
+.trend-class span{
+    margin-top: 1vh;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+    text-align: justify;
+    width: 60vw;
+    margin-left: 13%;
+}
+
+.blog-line3{
+    box-sizing: border-box;
+    margin-top: 12vh;
+    border-bottom: 1px solid #424949;
+    width: 50%;
+    margin-left: 20vw;
+    align-items: center;
+}
+
+.sec4-heading{
+    margin-top: 5vh;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.sec4-class{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec4-image-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.sec4-img1{
+    border-radius: 10px;
+    height: 45vh;
+    width: 15vw;
+    padding: 0;
+}
+
+.sec4-class span{
+    margin-top: 2vh;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+    text-align: justify;
+    width: 60vw;
+    margin-left: 13%;
+}

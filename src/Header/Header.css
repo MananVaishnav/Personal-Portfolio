@@ -1,0 +1,24 @@
+.header-class{
+    position: fixed;
+    display: flex; 
+    flex-direction: row;
+    top: 2vh;
+    left: 80%;
+    z-index: 6;
+    gap: 3vw;
+}
+
+.header-class h3{
+    position: relative;
+    color: black;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    font-weight: 200;
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+.header-class h3:hover{
+    /* font-size: 1.4vw; */
+    border-bottom: 2px solid #00003b;
+}

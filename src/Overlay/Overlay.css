@@ -1,0 +1,28 @@
+/* bebas neue */
+/* font-family: "Bebas Neue", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Borel&family=Grand+Hotel&family=Play:wght@400;700&display=swap');
+
+/* roboto */
+/* font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* outfit */
+/* font-family: "Outfit", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.overlay-class{
+    z-index: 5;
+    height: 100%;
+    background-color: white;
+    width: 100%;
+}
+
+.overlay-title{
+    position: relative;
+    font-family: "Outfit", sans-serif;
+    font-size: 2vw;
+    left: 10vw;
+    top: 2vh;
+    color: black;
+}
