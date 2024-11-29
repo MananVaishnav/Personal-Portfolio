@@ -304,9 +304,11 @@ const Home = () => {
   const [isVisible, setIsVisible] = useState({
     sec2Heading: false,
     sec3Heading: false,
+    sec4Heading: false,
   });
   const sec2headingRef = useRef(null);
   const sec3headingRef = useRef(null);
+  const sec4headingRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -317,12 +319,18 @@ const Home = () => {
           } else if (entry.target === sec3headingRef.current && entry.isIntersecting) {
             setIsVisible((prevState) => ({ ...prevState, sec3Heading: true }));
           }
+          else if (entry.target === sec4headingRef.current && entry.isIntersecting) {
+            setIsVisible((prevState) => ({ ...prevState, sec4Heading: true }));
+          }
           else {
             if (entry.target === sec2headingRef.current) {
               setIsVisible((prevState) => ({ ...prevState, sec2Heading: false }));
             }
             if (entry.target === sec3headingRef.current) {
               setIsVisible((prevState) => ({ ...prevState, sec3Heading: false }));
+            }
+            if (entry.target === sec4headingRef.current) {
+              setIsVisible((prevState) => ({ ...prevState, sec4Heading: false }));
             }
           }
         });
@@ -338,6 +346,9 @@ const Home = () => {
     if (sec3headingRef.current) {
       observer.observe(sec3headingRef.current);
     }
+    if (sec4headingRef.current) {
+      observer.observe(sec4headingRef.current);
+    }
 
     return () => {
       if (sec2headingRef.current) {
@@ -346,21 +357,50 @@ const Home = () => {
       if (sec3headingRef.current) {
         observer.unobserve(sec3headingRef.current)
       }
+      if (sec4headingRef.current) {
+        observer.unobserve(sec4headingRef.current)
+      }
     }
   }, []);
 
   // for aboutme
-  const [isaboutVisible, setIsAboutVisible] = useState(false);
+  const [isaboutVisible, setIsAboutVisible] = useState({
+    sec2about: false,
+    service1: false,
+    service2: false,
+    service3: false,
+  });
   const aboutRef = useRef(null);
+  const service1Ref = useRef(null);
+  const service2Ref = useRef(null);
+  const service3Ref = useRef(null);
 
   useEffect(() => {
     const aboutobserver = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setIsAboutVisible(true);
-          } else {
-            setIsAboutVisible(false);
+          if (entry.target === aboutRef.current && entry.isIntersecting) {  
+            setIsAboutVisible((prevState) => ({ ...prevState, sec2about: true }));
+          } else if (entry.target === service1Ref.current && entry.isIntersecting) {  
+            setIsAboutVisible((prevState) => ({ ...prevState, service1: true }));
+          } else if (entry.target === service2Ref.current && entry.isIntersecting) {  
+            setIsAboutVisible((prevState) => ({ ...prevState, service2: true }));
+          } else if (entry.target === service3Ref.current && entry.isIntersecting) {  
+            setIsAboutVisible((prevState) => ({ ...prevState, service3: true }));
+          }
+          else {
+            if (entry.target === aboutRef.current ) {  
+              setIsAboutVisible((prevState) => ({ ...prevState, sec2about: false }));
+            }
+            if (entry.target === service1Ref.current && entry.isIntersecting) {  
+              setIsAboutVisible((prevState) => ({ ...prevState, service1: false }));
+            }
+            if (entry.target === service2Ref.current && entry.isIntersecting) {  
+              setIsAboutVisible((prevState) => ({ ...prevState, service2: false }));
+            }
+            if (entry.target === service3Ref.current && entry.isIntersecting) {  
+              setIsAboutVisible((prevState) => ({ ...prevState, service3: false }));
+            }
           }
         });
       },{
@@ -371,13 +411,43 @@ const Home = () => {
     if (aboutRef.current) {
       aboutobserver.observe(aboutRef.current);
     }
+    if (service1Ref.current) {
+      aboutobserver.observe(service1Ref.current);
+    }
+    if (service2Ref.current) {
+      aboutobserver.observe(service2Ref.current);
+    }
+    if (service3Ref.current) {
+      aboutobserver.observe(service3Ref.current);
+    }
 
     return () => {
       if (aboutRef.current) {
         aboutobserver.unobserve(aboutRef.current);
       }
+      if (service1Ref.current) {
+        aboutobserver.unobserve(service1Ref.current);
+      }
+      if (service2Ref.current) {
+        aboutobserver.unobserve(service2Ref.current);
+      }
+      if (service3Ref.current) {
+        aboutobserver.unobserve(service3Ref.current);
+      }
     };
   }, []);
+
+
+  // bg color effect
+  const [bgColor, setBgColor] = useState("#f2f4f4");
+
+  const handleHover = (color) => {
+    setBgColor(color);
+  }
+
+  const handleHoverOut = () => {
+    setBgColor("#f2f4f4");
+  }
 
 
   return (
@@ -408,7 +478,7 @@ const Home = () => {
           <div className="section2-aboutme">
             {/* <video src="/video/aboutvid.mp4" autoPlay muted></video> */}
             <img src="/images/abi1.jpg" alt="" ref={imageRef} className='section2-img1'/>
-            <h3 ref={aboutRef} className={`${isaboutVisible ? 'visible' : ''}`}>Creative <span>web</span> and <span>visual</span> designer shaping ideas into stunning digital experiences.</h3>
+            <h3 ref={aboutRef} className={`${isaboutVisible.sec2about ? 'visible' : ''}`}>Creative <span>web</span> and <span>visual</span> designer shaping ideas into stunning digital experiences.</h3>
             <img src="/images/abi2.jpg" alt="" ref={imageRef2} className='section2-img2'/>
           </div>
         </div>
@@ -416,7 +486,7 @@ const Home = () => {
         <div className="line1"></div>
 
         <div className="section-3"> 
-          <span ref={sec3headingRef} className={`section-3-heading ${isVisible.sec3Heading ? 'visible' : ''}`}>What i can do</span>
+          <span ref={sec3headingRef} className={`section-3-heading ${isVisible.sec3Heading ? 'visible' : ''}`}>What <span>i can</span> do</span>
           <div className="sec3-options">
             <div className='elem' data-image='/images/webdev.gif'>
               <div className="overlay"></div>
@@ -439,6 +509,59 @@ const Home = () => {
               <h2>Graphic Designs</h2>
             </div> */}
           </div>
+        </div>
+
+        {/* <div className="line1"></div> */}
+
+        <div className="services-section">
+          <span ref={sec4headingRef} className={`services-heading ${isVisible.sec4Heading ? 'visible' : ''}`}>Services <span>i</span> Provide</span>  
+
+          <div style={{ backgroundColor: bgColor, transition: "background-color 0.5s ease" }}>    
+            <div className="service1">
+              <img 
+                src="/images/ds1.png" alt="" className='service1-img1'
+                onMouseEnter={() => handleHover("#f5b7b1")}
+                onMouseLeave={handleHoverOut}
+              />
+              <div ref={service1Ref} className={`sm-heading-subheading ${isaboutVisible.service1 ? 'visible' : ''}`}>
+                <h2 className='service1-name'>Social media content creation</h2>
+                <h3 className="sm-subheading">
+                  I offer creative and engaging <span>social media</span> content creation services to help brands stand out.
+                  From eye-catching visuals to compelling captions.
+                </h3>
+              </div> 
+            </div>
+
+            <div className="service2">
+              <div ref={service2Ref} className={`sm2-heading-subheading ${isaboutVisible.service2 ? 'visible' : ''}`}>
+                <h2 className='service2-name'>Visual Design creation</h2>
+                <h3 className="sm2-subheading">
+                  I create stunning graphics and cohesive <span>designs</span> that capture attention, communicate effectively, 
+                  and leave a lasting impression.
+                </h3>
+              </div>
+              <img 
+                src="/images/ds6.png" alt="" className='service2-img1'
+                onMouseEnter={() => handleHover("#a2d9ce")}
+                onMouseLeave={handleHoverOut}
+              /> 
+            </div>
+
+            <div className="service3">
+              <img 
+                src="/images/landingpage.jpg" alt="" className='service3-img1'
+                onMouseEnter={() => handleHover("#d7bde2")}
+                onMouseLeave={handleHoverOut}
+              />
+              <div ref={service3Ref} className={`sm3-heading-subheading ${isaboutVisible.service3 ? 'visible' : ''}`}>
+                <h2 className='service3-name'>Landing page creation</h2>
+                <h3 className="sm3-subheading">
+                I design and develop high-converting <span>landing pages</span> tailored to your goals. 
+                From clean layouts to responsive designs, I ensure your page delivers a seamless user experience and drives results.
+                </h3>
+              </div> 
+            </div>
+          </div>    
         </div>
 
         <div className="text-carousel">

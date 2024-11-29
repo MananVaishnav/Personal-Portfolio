@@ -38,6 +38,10 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+    transition: background-color 0.5s ease;
+}
+
 .fixed-img-div{
     height: 28vw;
     width: 25vw;
@@ -192,7 +196,7 @@ html, body {
 
 .section-2-heading{
     font-family: "Outfit", sans-serif;
-    font-size: 6vw;
+    font-size: 7vw;
     font-weight: 300;
     margin-left: 3vw;
     z-index: 1;
@@ -208,6 +212,7 @@ html, body {
 
 .section-2-heading span{
     color: #f94a13;
+    font-family: "Grand Hotel", cursive;
 }
 
 .section2-aboutme{
@@ -292,7 +297,7 @@ html, body {
 /* line */
 .line1{
     box-sizing: border-box;
-    margin-top: 5vh;
+    margin-top: 10vh;
     border-bottom: 1px solid #424949;
     width: 50%;
     margin-left: 25vw;
@@ -307,13 +312,13 @@ html, body {
     background-color: #f2f3f4;
     min-height: 100vh;
     width: 100%;
-    margin-top: 25vh;
+    margin-top: 20vh;
     z-index: 1;
 }
 
 .section-3-heading{
     /* margin-top: 3vh; */
-    font-size: 8vw;
+    font-size: 7vw;
     font-family: "Outfit", sans-serif;
     font-weight: 250;
     margin-left: 5vw;
@@ -322,6 +327,11 @@ html, body {
     opacity: 0; 
     transform: translateY(50px); 
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-3-heading span{
+    color: #f94a13;
+    font-family: "Grand Hotel", cursive;
 }
 
 .section-3-heading.visible {
@@ -406,6 +416,242 @@ html, body {
     height: 60vh;
     width: 50vw;
 } */
+
+/* services section */
+.services-section{
+    margin-top: 15vh;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-heading{
+    font-size: 7vw;
+    font-family: "Outfit", sans-serif;
+    font-weight: 250;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    z-index: 1;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.services-heading.visible { 
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.services-heading span{
+    color: #f94a13;
+    font-family: "Grand Hotel", cursive;
+}
+
+.service1{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.service1-img1{
+    margin-top: 10vh;
+    height: 60vh;
+    border-radius: 25px;
+    width: 26vw;
+    /* margin-left: 7vw; */
+    margin-right: 10vw;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service1-img1:hover{
+    cursor: pointer;
+    filter: grayscale(70%);
+    filter: gray;
+    -webkit-filter: grayscale(70%);
+    transition: 1s ease;
+}
+
+.service1-name{
+    margin-top: 17vh;
+    font-weight: 300;
+    font-family: "Outfit", sans-serif;
+    font-size: 3.4vw;
+    width: 30vw;
+    margin-left: 7vw;
+    margin-right: 5vw;
+}
+
+.sm-heading-subheading{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.sm-heading-subheading.visible {
+    opacity: 1;
+    transform:  translateY(0);
+}
+
+.sm-subheading{
+    margin-top: 5vh;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 300;
+    width: 35vw;
+    margin-left: 7vw;
+    text-align: justify;
+}
+
+.sm-subheading span{
+    font-size: 2.5vw;
+    color: #f94a13;
+    font-family: "Grand Hotel", cursive;
+}
+
+/* service-2 */
+.service2{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.service2-img1{
+    margin-top: 10vh;
+    height: 60vh;
+    border-radius: 25px;
+    width: 26vw;
+    margin-left: 15vw;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service2-img1:hover{
+    cursor: pointer;
+    filter: grayscale(70%);
+    filter: gray;
+    -webkit-filter: grayscale(70%);
+    transition: 1s ease;
+
+}
+
+.service2-name{
+    margin-top: 17vh;
+    font-weight: 300;
+    font-family: "Outfit", sans-serif;
+    font-size: 3.4vw;
+    width: 30vw;
+    margin-right: 5vw;
+}
+
+.sm2-heading-subheading{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.sm2-heading-subheading.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sm2-subheading{
+    margin-top: 5vh;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 300;
+    width: 35vw;
+    text-align: justify;
+}
+
+.sm2-subheading span{
+    font-size: 2.5vw;
+    color: #f94a13;
+    font-family: "Grand Hotel", cursive;
+}
+
+/* service-3 */
+.service3{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+
+.service3-img1{
+    margin-top: 10vh;
+    height: 60vh;
+    border-radius: 25px;
+    width: 35vw;
+    /* margin-left: 7vw; */
+    margin-right: 10vw;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service3-img1:hover{
+    cursor: pointer;
+    filter: grayscale(70%);
+    filter: gray;
+    -webkit-filter: grayscale(70%);
+    /* filter: none; */
+    transition: 1s ease;
+
+}
+
+.service3-name{
+    margin-top: 17vh;
+    font-weight: 300;
+    font-family: "Outfit", sans-serif;
+    font-size: 3.4vw;
+    width: 30vw;
+    margin-left: 7vw;
+    margin-right: 5vw;
+}
+
+.sm3-heading-subheading{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.sm3-heading-subheading.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sm3-subheading{
+    margin-top: 5vh;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 300;
+    width: 35vw;
+    margin-left: 7vw;
+    text-align: justify;
+}
+
+.sm3-subheading span{
+    color: #f94a13;
+    font-size: 2.5vw;
+    font-family: "Grand Hotel", cursive;
+}
 
 /* footer */
 .footer-class{
