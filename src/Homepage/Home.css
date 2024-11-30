@@ -195,6 +195,7 @@ body {
 }
 
 .section-2-heading{
+    margin-top: 7vh;
     font-family: "Outfit", sans-serif;
     font-size: 7vw;
     font-weight: 300;
@@ -223,7 +224,7 @@ body {
 }
 
 .section2-img1{
-    margin-top: 3vh;
+    margin-top: 5vh;
     z-index: 0;
     width: 35vw;
     height: 65vh;
@@ -246,7 +247,7 @@ body {
 }
 
 .section2-img2{
-    margin-top: 3vh;
+    margin-top: 5vh;
     width: 35vw;
     height: 65vh;
     margin-right: 5vw;
@@ -297,10 +298,10 @@ body {
 /* line */
 .line1{
     box-sizing: border-box;
-    margin-top: 10vh;
+    margin-top: 15vh;
     border-bottom: 1px solid #424949;
-    width: 50%;
-    margin-left: 25vw;
+    width: 60%;
+    margin-left: 20vw;
     align-items: center;
     color: black;
 }
@@ -317,7 +318,7 @@ body {
 }
 
 .section-3-heading{
-    /* margin-top: 3vh; */
+    margin-top: 7vh;
     font-size: 7vw;
     font-family: "Outfit", sans-serif;
     font-weight: 250;
@@ -658,7 +659,7 @@ body {
     margin-top: 20vh;
     min-height: 100vh;
     width: 100%;
-    background-color:  #c39bd3;
+    background-color:  #fad7a0;
     position: relative;
     z-index: 1;
 }
@@ -755,4 +756,639 @@ body {
     to {
         transform: translateX(-100%);
     }
+}
+
+
+/* responsive */
+@media screen and (max-width: 479px) {
+    .home-container {
+        background-color: #f2f4f4;
+    }
+
+    .subheading-profile{
+        display: flex;
+    }
+    
+    .hero-section-below-text{
+        margin-top: 15vh;
+        font-size: 14vw;
+        margin-left: 5vw;
+        font-family: "Outfit", sans-serif;
+        color: #424949;
+        font-weight: 400;
+        line-height: 5rem;
+    }
+    
+    .below-text-two{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .profile-text{
+        font-family: "Grand Hotel", cursive;
+        color: #f94a13;
+        font-size: 12.5vw;
+        margin-left: 14vw;
+    }
+    
+    .designer-text{
+        font-family: "Outfit", sans-serif;
+        color: #424949;
+        margin-top: 0;
+        font-size: 13.5vw;
+        margin-left: 5vw;
+        font-weight: 400;
+    }
+
+    .hero-header-section video{
+        position: relative;
+        background-color: #f2f3f4;
+        margin-top: 6.5vh;
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    /* section2 */
+    .section-2{
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f3f4;
+        min-height: 100vh;
+        width: 100%;
+        padding-top: 10vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        z-index: 1;
+    }
+    
+    .section-2-heading{
+        font-family: "Outfit", sans-serif;
+        font-size: 8vw;
+        font-weight: 300;
+        margin-left: 3vw;
+        z-index: 1;
+        opacity: 0; 
+        transform: translateY(50px); 
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .section-2-heading.visible {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+    
+    .section-2-heading span{
+        color: #f94a13;
+        font-family: "Grand Hotel", cursive;
+    }
+    
+    .section2-aboutme{
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: row;
+        padding-left: 2vw;
+    }
+    
+    .section2-img1{
+        /* margin-top: 2vh;
+        z-index: 0;
+        width: 35vw;
+        height: 40vh;
+        margin-left: 4vw;
+        margin-bottom: 10vh;
+        border-radius: 30px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -webkit-transition: all 1s ease;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+        display: none;
+    }
+    
+    .section2-img2{
+        margin-top: 1vh;
+        width: 35vw;
+        height: 40vh;
+        margin-right: 5vw;
+        margin-bottom: 7vh;
+        border-radius: 30px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -webkit-transition: all 1s ease;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    
+    .section2-img2:hover{
+        cursor: pointer;
+        filter: grayscale(0%);
+        filter: gray;
+        -webkit-filter: grayscale(0%);
+        filter: none;
+        transition: 1s ease;
+    }
+    
+    .section2-aboutme h3{
+        margin-top: 15vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-size: 3vw;
+        text-align: justify;
+        width: 40%;
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition:  opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    
+    .section2-aboutme h3.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .section2-aboutme span{
+        font-family: "Outfit", sans-serif;
+        color:  #ff0000;
+        font-weight: 400;
+    }
+
+    /* line */
+    .line1{
+        box-sizing: border-box;
+        margin-top: -3vh;
+        border-bottom: 1px solid #424949;
+        width: 60%;
+        margin-left: 20vw;
+        align-items: center;
+        color: black;
+    }
+
+    /* section-3 */
+    .section-3{
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f3f4;
+        min-height: 100vh;
+        width: 100%;
+        margin-top: 10vh;
+        z-index: 1;
+    }
+
+    .section-3-heading{
+        /* margin-top: 3vh; */
+        font-size: 8vw;
+        font-family: "Outfit", sans-serif;
+        font-weight: 250;
+        margin-left: 5vw;
+        margin-bottom: 10vh;
+        z-index: 1;
+        opacity: 0; 
+        transform: translateY(50px); 
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .section-3-heading span{
+        color: #f94a13;
+        font-family: "Grand Hotel", cursive;
+    }
+
+    .section-3-heading.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .sec3-options{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .elem{
+        height: 9vh;
+        width: 100%;
+        background-color: #f2f3f4;
+        position: relative;
+        border-bottom: 1px solid #424949;
+        display: flex;
+        align-items: center;
+        padding: 0 2vw;
+        overflow: hidden;
+    }
+
+    .elem h2{
+        position: relative;
+        z-index: 9;
+        font-size: 3vw;
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    .elem .overlay{
+        height: 100%;
+        width: 100%;
+        background:  #eb984e;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: -100%;
+        transition: all ease 0.6s;
+    }
+
+    .elem:hover .overlay{
+        top: 0;
+        color: #f2f3f4;
+        cursor: pointer;
+    }
+
+    .fixed-img-div{
+        border: 1px solid #424949;
+        height: 40vw;
+        width: 35vw;
+        border-radius: 10px;
+        position: fixed;
+        z-index: 99;
+        left: 50%;
+        top: 35%;
+        display: none;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    /* services section */
+    .services-section{
+        margin-top: -20vh;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-heading{
+        font-size: 7vw;
+        font-family: "Outfit", sans-serif;
+        font-weight: 250;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+        z-index: 1;
+        opacity: 0; 
+        transform: translateY(50px); 
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .services-heading.visible { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .services-heading span{
+        color: #f94a13;
+        font-family: "Grand Hotel", cursive;
+    }
+
+    .service1{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .service1-img1{
+        margin-top: 7vh;
+        height: 35vh;
+        width: 37vw;
+        border-radius: 25px;
+        margin-left: 7vw;
+        margin-right: 10vw;
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -webkit-transition: all 1s ease;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .service1-img1:hover{
+        cursor: pointer;
+        filter: grayscale(70%);
+        filter: gray;
+        -webkit-filter: grayscale(70%);
+        transition: 1s ease;
+    }
+
+    .service1-name{
+        margin-top: 14vh;
+        font-weight: 300;
+        font-family: "Outfit", sans-serif;
+        font-size: 3.7vw;
+        width: 30vw;
+        margin-left: 3vw;
+        /* margin-right: 2vw; */
+    }
+
+    .sm-heading-subheading{
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .sm-heading-subheading.visible {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+
+    .sm-subheading{
+        margin-top: 2vh;
+        font-family: "Outfit", sans-serif;
+        font-size: 2.3vw;
+        font-weight: 300;
+        width: 35vw;
+        margin-left: 3vw;
+        text-align: justify;
+    }
+
+    .sm-subheading span{
+        font-size: 2.5vw;
+        color: #f94a13;
+        font-family: "Grand Hotel", cursive;
+    }
+
+    /* service-2 */
+    .service2{
+        margin-top: 7vh;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .service2-img1{
+        margin-top: 7vh;
+        height: 35vh;
+        width: 37vw;
+        border-radius: 25px;
+        margin-left: 15vw;
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -webkit-transition: all 1s ease;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .service2-img1:hover{
+        cursor: pointer;
+        filter: grayscale(70%);
+        filter: gray;
+        -webkit-filter: grayscale(70%);
+        transition: 1s ease;
+
+    }
+
+    .service2-name{
+        margin-top: 14vh;
+        font-weight: 300;
+        font-family: "Outfit", sans-serif;
+        font-size: 3.7vw;
+        width: 30vw;
+        margin-right: 3vw;
+    }
+
+    .sm2-heading-subheading{
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .sm2-heading-subheading.visible{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .sm2-subheading{
+        margin-top: 2vh;
+        font-family: "Outfit", sans-serif;
+        font-size: 2.3vw;
+        font-weight: 300;
+        width: 35vw;
+        text-align: justify;
+    }
+
+    .sm2-subheading span{
+        font-size: 2.5vw;
+        color: #f94a13;
+        font-family: "Grand Hotel", cursive;
+    }
+
+    /* service-3 */
+    .service3{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: center;
+        margin-bottom: 3vh;
+    }
+
+    .service3-img1{
+        margin-top: 7vh;
+        height: 33vh;
+        width: 40vw;
+        border-radius: 25px;
+        margin-left: 7vw;
+        margin-right: 10vw;
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -webkit-transition: all 1s ease;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .service3-img1:hover{
+        cursor: pointer;
+        filter: grayscale(70%);
+        filter: gray;
+        -webkit-filter: grayscale(70%);
+        /* filter: none; */
+        transition: 1s ease;
+
+    }
+
+    .service3-name{
+        margin-top: 14vh;
+        font-weight: 300;
+        font-family: "Outfit", sans-serif;
+        font-size: 3.7vw;
+        width: 30vw;
+        margin-left: -1vw;
+        /* margin-right: 5vw; */
+    }
+
+    .sm3-heading-subheading{
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .sm3-heading-subheading.visible{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .sm3-subheading{
+        margin-top: 2vh;
+        font-family: "Outfit", sans-serif;
+        font-size: 2.3vw;
+        font-weight: 300;
+        width: 35vw;
+        margin-left: -1vw;
+        text-align: justify;
+    }
+
+    .sm3-subheading span{
+        color: #f94a13;
+        font-size: 2.5vw;
+        font-family: "Grand Hotel", cursive;
+    }
+
+
+    /* text-carousel */
+    .text-carousel{
+        margin-top: 15vh;
+        min-height: 30vh;
+        width: 100%;
+    }
+
+    .moving-text{
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .moving-text::-webkit-scrollbar{
+        display: none;
+    }
+
+    .circle-s{
+        height: 3vh;
+        width: 3vw;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #f94a13;
+        margin: 1vw 2.5vw;
+    }
+
+    .text-con{
+        white-space: nowrap;
+        display: inline-block;
+        animation-name: move;
+        animation-duration: 9s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .moving-text h2{
+        font-weight: 600;
+        font-size: 8.7vw;
+        font-family: "Outfit", sans-serif;
+        display: inline-block;
+    }
+
+
+    /* footer */
+    .footer-class{
+        margin-top: -2vh;
+        min-height: 50vh;
+        width: 100%;
+        background-color:   #fad7a0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer-class h2{
+        color: #00003b;
+        font-family: "Outfit", sans-serif;
+        font-size: 8.2vw;
+        text-align: center;
+        font-weight: 300;
+        z-index: 1;
+    }
+
+    .footer-data{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .data-for-connect{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-label{
+        font-size: 4vw;
+        color: #00003b;
+        font-family: "Outfit", sans-serif;
+        margin-top: 5vh;
+        margin-left: 5vw;
+        z-index: 1;
+    }
+
+    .contact-email{
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        line-height: 1px;
+    }
+
+    .contact-number{
+        font-weight: 350;
+    }
+
+    .contact-email h3{
+        margin-left: 5vw;
+        font-size: 2.7vw;
+        /* margin-top: 2vh; */
+        color: #00003b;
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-insta{
+        margin-top: 10vh;
+        margin-left: 5vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-insta img{
+        height: 4vh;
+        width: 4vw;
+    }
+
+    .social-insta h4{
+        margin-left: 1.5vw;
+        margin-top: 1.5vh;
+        font-weight: 300;
+        color: #00003b;
+        font-family: "Outfit", sans-serif;
+        font-size: 2.5vw;
+    }
+
+    .footer-img{
+        margin-top: 3vh;
+        border-radius: 50px;
+        height: 35vh;
+        width: 37vw;
+        margin-left: 15vw;
+        margin-bottom: 5vh;
+    }
+
 }

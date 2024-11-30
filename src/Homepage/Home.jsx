@@ -204,8 +204,8 @@ const Home = () => {
     },{
       opacity: 1,
       y: '0%',
-      duration: 0.8,
-      ease: 'power4.out',
+      duration: 0.6,
+      ease: 'power3.out',
       scrollTrigger: {
         trigger: imageRef.current,
         start: 'top 80%', 
@@ -220,8 +220,8 @@ const Home = () => {
     },{
       opacity: 1,
       y: '0%',
-      duration: 0.8,
-      ease: 'power4.out',
+      duration: 0.6,
+      ease: 'power3.out',
       scrollTrigger: {
         trigger: imageRef2.current,
         start: 'top 80%', 
