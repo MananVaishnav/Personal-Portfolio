@@ -763,6 +763,7 @@ body {
 @media screen and (min-width: 414px) and (max-width: 479px) {
     .home-container {
         background-color: #f2f4f4;
+        width: 100%;
     }
 
     .subheading-profile{
@@ -816,7 +817,7 @@ body {
         background-color: #f2f3f4;
         min-height: 100vh;
         width: 100%;
-        padding-top: 10vh;
+        padding-top: 1vh;
         padding-left: 1vw;
         padding-right: 1vw;
         z-index: 1;
@@ -824,7 +825,7 @@ body {
     
     .section-2-heading{
         font-family: "Outfit", sans-serif;
-        font-size: 8vw;
+        font-size: 9vw;
         font-weight: 300;
         margin-left: 3vw;
         z-index: 1;
@@ -846,31 +847,20 @@ body {
     .section2-aboutme{
         margin-top: 3vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-left: 2vw;
     }
     
     .section2-img1{
-        /* margin-top: 2vh;
-        z-index: 0;
-        width: 35vw;
-        height: 40vh;
-        margin-left: 4vw;
-        margin-bottom: 10vh;
-        border-radius: 30px;
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -webkit-transition: all 1s ease;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
         display: none;
     }
     
     .section2-img2{
         margin-top: 1vh;
-        width: 35vw;
-        height: 40vh;
-        margin-right: 5vw;
-        margin-bottom: 7vh;
+        width: 40vw;
+        height: 30vh;
+        margin-left: 27%;
+        /* margin-bottom: 7vh; */
         border-radius: 30px;
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
@@ -888,12 +878,11 @@ body {
     }
     
     .section2-aboutme h3{
-        margin-top: 15vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        font-size: 3vw;
+        margin-top: 1.5vh;
+        margin-left: 20%;
+        font-size: 5vw;
         text-align: justify;
-        width: 40%;
+        width: 60%;
         font-family: "Outfit", sans-serif;
         font-weight: 300;
         letter-spacing: 2px;
@@ -931,17 +920,17 @@ body {
         background-color: #f2f3f4;
         min-height: 100vh;
         width: 100%;
-        margin-top: 10vh;
+        margin-top: 2vh;
         z-index: 1;
     }
 
     .section-3-heading{
         /* margin-top: 3vh; */
-        font-size: 9vw;
+        font-size: 9.5vw;
         font-family: "Outfit", sans-serif;
         font-weight: 250;
         margin-left: 5vw;
-        margin-bottom: 10vh;
+        margin-bottom: 3vh;
         z-index: 1;
         opacity: 0; 
         transform: translateY(50px); 
@@ -1021,7 +1010,7 @@ body {
 
     /* services section */
     .services-section{
-        margin-top: -25vh;
+        margin-top: -35vh;
         min-height: 100vh;
         width: 100%;
         display: flex;
@@ -1029,7 +1018,7 @@ body {
     }
 
     .services-heading{
-        font-size: 9vw;
+        font-size: 9.5vw;
         font-family: "Outfit", sans-serif;
         font-weight: 250;
         margin-left: 5vw;
@@ -1059,7 +1048,7 @@ body {
 
     .service1-img1{
         margin-top: 7vh;
-        height: 35vh;
+        height: 30vh;
         width: 37vw;
         border-radius: 25px;
         margin-left: 7vw;
@@ -1079,12 +1068,12 @@ body {
     }
 
     .service1-name{
-        margin-top: 14vh;
+        margin-top: 10vh;
         font-weight: 300;
         font-family: "Outfit", sans-serif;
-        font-size: 3.7vw;
+        font-size: 4vw;
         width: 30vw;
-        margin-left: 3vw;
+        margin-left: 1vw;
         /* margin-right: 2vw; */
     }
 
@@ -1104,10 +1093,10 @@ body {
     .sm-subheading{
         margin-top: 2vh;
         font-family: "Outfit", sans-serif;
-        font-size: 2.3vw;
+        font-size: 3vw;
         font-weight: 300;
         width: 35vw;
-        margin-left: 3vw;
+        margin-left: 1vw;
         text-align: justify;
     }
 
@@ -1127,11 +1116,11 @@ body {
     }
 
     .service2-img1{
-        margin-top: 7vh;
-        height: 35vh;
+        margin-top: 3vh;
+        height: 30vh;
         width: 37vw;
         border-radius: 25px;
-        margin-left: 15vw;
+        margin-left: 12vw;
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
         -webkit-transition: all 1s ease;
@@ -1148,12 +1137,12 @@ body {
     }
 
     .service2-name{
-        margin-top: 14vh;
+        margin-top: 7vh;
         font-weight: 300;
         font-family: "Outfit", sans-serif;
-        font-size: 3.7vw;
+        font-size: 4vw;
         width: 30vw;
-        margin-right: 3vw;
+        margin-right: 1vw;
     }
 
     .sm2-heading-subheading{
@@ -1172,7 +1161,7 @@ body {
     .sm2-subheading{
         margin-top: 2vh;
         font-family: "Outfit", sans-serif;
-        font-size: 2.3vw;
+        font-size: 3vw;
         font-weight: 300;
         width: 35vw;
         text-align: justify;
@@ -1194,8 +1183,8 @@ body {
     }
 
     .service3-img1{
-        margin-top: 7vh;
-        height: 33vh;
+        margin-top: 10vh;
+        height: 30vh;
         width: 40vw;
         border-radius: 25px;
         margin-left: 7vw;
@@ -1220,7 +1209,7 @@ body {
         margin-top: 14vh;
         font-weight: 300;
         font-family: "Outfit", sans-serif;
-        font-size: 3.7vw;
+        font-size: 4vw;
         width: 30vw;
         margin-left: -1vw;
         /* margin-right: 5vw; */
@@ -1242,10 +1231,11 @@ body {
     .sm3-subheading{
         margin-top: 2vh;
         font-family: "Outfit", sans-serif;
-        font-size: 2.3vw;
+        font-size: 3vw;
         font-weight: 300;
-        width: 35vw;
+        width: 40vw;
         margin-left: -1vw;
+        margin-right: 3vw;
         text-align: justify;
     }
 
