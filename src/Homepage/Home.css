@@ -760,7 +760,7 @@ body {
 
 
 /* responsive */
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 414px) and (max-width: 479px) {
     .home-container {
         background-color: #f2f4f4;
     }
