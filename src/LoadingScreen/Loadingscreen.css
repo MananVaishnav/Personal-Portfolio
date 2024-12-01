@@ -45,3 +45,9 @@
     /* line-height: '5.9rem'; */
     /* transition: transform .5s; */
 }
+
+@media screen and (max-width: 479px) {
+    .welcometext{
+        font-size: 15vw;
+    }
+}

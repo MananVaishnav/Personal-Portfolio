@@ -224,3 +224,134 @@ html, body {
     width: 60vw;
     margin-left: 13%;
 }
+
+
+/* responsive */
+@media screen and (max-width: 479px) {
+
+    .blog-header h2{
+        font-family: "Outfit", sans-serif;
+        font-weight: 200;
+        font-size: 8vw;
+        text-align: center;
+        padding-top: 8vh;
+    }
+    
+    .blog-header span{
+        font-family: "Grand Hotel", cursive;
+        color: #f94a13;
+    }
+    
+    .blog-content{
+        padding-left: 1.5vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog-content-container{
+        margin-top: 3vh;
+        /* box-sizing: border-box;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+        min-height: 100vh;
+        margin: 3vw auto;
+        width: 80vw;
+    }
+    
+    .blog-content-header{
+        width: 60vw;
+        margin: 2vw auto;
+        font-family: "Outfit", sans-serif;
+        text-align: center;
+        font-size: 3.5vw;
+        font-weight: 400;
+    }
+
+    .first-p{
+        font-size: 2.9vw;
+    }
+
+    .blog-content-container img{
+        border-radius: 10px;
+        width: 45vw;
+        height: 30vh;
+        margin-top: 8vh;
+        margin-left: 20%;
+    }
+    
+    .blog-content-container img:hover{
+        cursor: pointer;
+    }
+    
+    .second-p-que{
+        margin-top: 5vh;
+        text-align: center;
+        font-family: "Outfit", sans-serif;
+        font-size: 4vw;
+        font-weight: 400;
+    }
+
+    .blog-line1{
+        width: 75%;
+        margin-top: 12vh;
+        border-bottom: 1px solid #424949;
+        margin-left: 10vw;
+    }
+
+    .sec-2-heading{
+        margin-top: 7vh;
+        font-size: 4vw;
+    }
+
+    .web-elements h2{
+        font-size: 3.5vw;
+    }
+
+    .web-elements span{
+        font-size: 2.4vw;
+    }
+
+    .blog-line2{
+        width: 75%;
+        margin-top: 12vh;
+        border-bottom: 1px solid #424949;
+        margin-left: 10vw;
+    }
+
+    .sec3-heading{
+        margin-top: 7vh;
+        font-size: 4vw;
+    }
+
+    .trend-class h2{
+        font-size: 3.5vw;
+    }
+
+    .trend-class span{
+        font-size: 2.4vw;
+    }
+
+    .blog-line3{
+        width: 75%;
+        margin-top: 12vh;
+        border-bottom: 1px solid #424949;
+        margin-left: 10vw;
+    }
+
+    .sec4-heading{
+        margin-top: 6.7vh;
+        font-size: 4.5vw;
+    }
+
+    .sec4-class img{
+        border-radius: 15px;
+        height: 35vh;
+        width: 50vw;
+        margin-top: 3vh;
+    }
+
+    .sec4-class span{
+        font-size: 2.8vw;
+        margin-bottom: 5vh;
+    }
+}

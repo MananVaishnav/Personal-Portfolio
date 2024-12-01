@@ -916,7 +916,7 @@ body {
     /* line */
     .line1{
         box-sizing: border-box;
-        margin-top: -3vh;
+        margin-top: -15vh;
         border-bottom: 1px solid #424949;
         width: 60%;
         margin-left: 20vw;
@@ -937,7 +937,7 @@ body {
 
     .section-3-heading{
         /* margin-top: 3vh; */
-        font-size: 8vw;
+        font-size: 9vw;
         font-family: "Outfit", sans-serif;
         font-weight: 250;
         margin-left: 5vw;
@@ -1021,7 +1021,7 @@ body {
 
     /* services section */
     .services-section{
-        margin-top: -20vh;
+        margin-top: -25vh;
         min-height: 100vh;
         width: 100%;
         display: flex;
@@ -1029,7 +1029,7 @@ body {
     }
 
     .services-heading{
-        font-size: 7vw;
+        font-size: 9vw;
         font-family: "Outfit", sans-serif;
         font-weight: 250;
         margin-left: 5vw;
@@ -1370,7 +1370,7 @@ body {
 
     .social-insta img{
         height: 4vh;
-        width: 4vw;
+        width: 5vw;
     }
 
     .social-insta h4{
